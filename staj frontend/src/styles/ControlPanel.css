@@ -1,0 +1,25 @@
+/* src/components/ControlPanel.css */
+.control-panel {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  flex-wrap: wrap; /* wrap if screen is narrow */
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1565c0;
+}

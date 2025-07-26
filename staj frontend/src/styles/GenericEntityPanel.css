@@ -1,0 +1,84 @@
+/* src/styles/GenericEntityPanel.css */
+
+/* Ortak popup, hata, buton vs. stil tanımları */
+
+.gep-search-popup {
+  background: #fff;
+  border: 1px solid currentColor;
+  padding: 0.75rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.gep-search-error {
+  color: #c62828;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: #ffebee;
+  border-left: 4px solid #c62828;
+  border-radius: 4px;
+}
+
+/* Buton grubu */
+.gep-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.gep-actions button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gep-actions button:first-child { background: #c62828; }
+.gep-actions button:last-child  { background: rgb(11, 11, 201) }
+
+/* Load More Butonu */
+.load-more {
+  text-align: center;
+  margin: 1rem 0 0;
+}
+
+.load-more button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  width: auto;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.load-more button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.gep-suggestions {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid currentColor;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gep-suggestions li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.gep-suggestions li:hover {
+  background: rgba(0,0,0,0.05);
+}
